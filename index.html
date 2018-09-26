@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EDMOTEC - Blog Tecnológico</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="shortcut icon" href="img/emotec-photoshop-favicon.png" type="image/x-icon">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header__content">
+            <div class="toggle">
+                <span class="toggle__span" id="btn1"></span>
+                <span class="toggle__span" id="btn2"></span>
+                <span class="toggle__span" id="btn3"></span>
+            </div>
+            <nav class="sidebar">
+                <ul class="sidebar__menu">
+                    <li class="menu__item"><a class="menu__link" href="#">Inicio</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Blog recientes</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Sobre mi</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Contactos</a></li>
+                </ul>
+                <div class="sidebar__social">
+                    <a href="#" class="social__link icon-facebook"></a>
+                    <a href="#" class="social__link icon-twitter"></a>
+                    <a href="#" class="social__link icon-github"></a>
+                    <a href="#" class="social__link icon-whatsapp"></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="banner body">
+           <div class="banner__img">
+               <img src="img/office-581131_1920.jpg">
+           </div>
+           <div class="banner__description">
+               <h2 class="banner__description__txt">Blog Tecnológico</h2>
+           </div>
+    </section>
+    <section class="main body">
+       <div class="main__content">
+            <section class="one__column">
+                <article class="one__column__article">
+                    <h1>Dispositivo de almacenamiento</h1>
+                    <div class="one__column__article__img">
+                        <img src="img/data-transfer-3199488_640.jpg">
+                    </div>
+                    <div class="one__column__article__description">
+                        <h2>Recuperar memoria USB</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit magnis, curabitur dictum ligula ridiculus etiam curae.
+                            lLorem ipsum dolor sit amet consectetur adipiscing elit magnis, curabitur dictum ligula ridiculus etiam curae.
+                            [...]
+                        </p>
+                        <a href="#">Continuar Leyendo</a>
+                        <time datetime="2018-08-17" pubdate="">Publicado el 22-09-2018</time>
+                    </div>
+                </article>
+                <article class="one__column__article">
+                    <h1>Dispositivo de almacenamiento</h1>
+                    <div class="one__column__article__img">
+                        <img src="img/antivirus-1349649_640.png">
+                    </div>
+                    <div class="one__column__article__description">
+                        <h2>Recuperar memoria USB</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit magnis, curabitur dictum ligula ridiculus etiam curae.
+                            lLorem ipsum dolor sit amet consectetur adipiscing elit magnis, curabitur dictum ligula ridiculus etiam curae.
+                            [...]
+                        </p>
+                        <a href="#">Continuar Leyendo</a>
+                        <time datetime="2018-08-17" pubdate="">Publicado el 22-09-2018</time>
+                    </div>
+                </article>
+            </section>
+            <aside class="two__column">
+                <div class="two__column__aside">
+                    <div class="two__aside__perfil">
+                       <img src="img/perfil.png">
+                        <h1>Edwin Molina</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit magnis, curabitur dictum ligula ridiculus etiam curae</p>
+                    </div>
+                    <div class="two__aside__recent">
+                        <div class="recent__post">
+                            <h3>ARTÍCULOS RECIENTES</h3>
+                            <li><a href="#">Cuida tu disco duro</a></li>
+                            <li><a href="#">Simbolo del sistema</a></li>
+                            <li><a href="#">Instalacion de programas</a></li>
+                            <li><a href="#">Antivirus.¿Es necesario?</a></li>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+       </div>
+    </section>
+    <script>
+        $('.toggle').click(function(){
+            $(this).toggleClass('on');
+            $(this).toggleClass('openBody');
+            $('.body').toggleClass('openBody');
+            $('.sidebar').toggleClass('openSidebar');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="es">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0">
+	<meta name="keywords" content="palabra clave,palabra clave,palabra clave">
+	<title>Acceso Denegado</title>
+	<style>
+        body{
+            text-align: center;
+            font-family: arial;
+        }
+        .contenido{
+            width: 100%;
+            max-width: 900px;
+            margin: auto;
+            
+            position: relative;
+        }
+        img{
+            width: 100%;
+        }
+        .txt{
+            position: absolute;
+            display: block;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            font-size: 30px;
+        }
+        @media screen and (min-width:300px){
+            .contenido{
+                margin-top: 100px;
+            }
+        }
+        @media screen and (min-width:860px){
+            .contenido{
+                margin-top: 0px;
+            }
+            .txt{
+                font-size: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+   <div class="contenido">
+       <img src="img/403-404.png">
+       <div class="txt">
+           <h2 style="color: red;">ERROR 404</h2>
+           <h3>No encontrado</h3>
+       </div>
+   </div>
+</body>
+</html>

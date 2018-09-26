@@ -1,0 +1,3 @@
+Options All -Indexes
+ErrorDocument 404 /EDMOTEC_WEB/notfound.html
+ErrorDocument 403 /EDMOTEC_WEB/forbidden.html
